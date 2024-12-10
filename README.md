@@ -16,18 +16,18 @@ Configurar o ambiente na AWS utilizando Docker/Container na instância EC2 e rea
 ## 📜 **Conteúdo**
 
 1. [Security Groups](#security-groups)  
-2. [VPC - Virtual Private Cloud](#vpc---virtual-private-cloud)  
-3. [EFS - Elastic File System](#efs---elastic-file-system)  
-4. [RDS - Relational Database](#rds---relational-database)  
+2. [VPC - Virtual Private Cloud](#vpc-virtual-private-cloud)  
+3. [EFS - Elastic File System](#efs-elastic-file-system)  
+4. [RDS - Relational Database](#rds-relational-database)  
 5. [Instância EC2 e User Data](#instância-ec2-e-user-data)  
 6. [Acesso ao EC2 e Bastion Host](#acesso-ao-ec2-e-bastion-host)  
 7. [Load Balancer](#load-balancer)  
-8. [ASG - Auto Scaling Group](#asg---auto-scaling-group)  
+8. [ASG - Auto Scaling Group](#asg-auto-scaling-group)  
 9. [Conclusão](#conclusão)
 
 
 
-### 1️⃣ 🔐[Security Groups - Criação](#security-groups)
+### 1️⃣ 🔐 [Security Groups - Criação](#security-groups)
 Antes de iniciarmos a criação da EC2, do RDS e do EFS, devemos criar os Security Groups para cada um no console AWS.
 
 + O SG da EC2 deve conter as seguintes Inbound Rules:
@@ -66,7 +66,7 @@ Antes de iniciarmos a criação da EC2, do RDS e do EFS, devemos criar os Securi
 
 ---
 
-### 2️⃣ ☁️[VPC - Virtual Private Cloud](#vpc---virtual-private-cloud)  
+### 2️⃣ ☁️ [VPC - Virtual Private Cloud](#vpc-virtual-private-cloud)  
 Configurar a rede virtual privada para gerenciar recursos de forma segura.  
 <p align="center">
   <img src="vpc.png" alt="Arquitetura" width="800">
@@ -78,7 +78,7 @@ As tabelas de rotas controlam o tráfego da rede, conectando sub-redes a recurso
 
 ---
 
-### 3️⃣ 📂[EFS - Elastic File System](#efs---elastic-file-system)  
+### 3️⃣ 📂 [EFS - Elastic File System](#efs-elastic-file-system)  
 
 Configurar o sistema de arquivos compartilhado utilizando o serviço Amazon Elastic File System.  
 
@@ -117,7 +117,7 @@ Configurar o sistema de arquivos compartilhado utilizando o serviço Amazon Elas
 
 ---
 
-### 4️⃣ 🎲[RDS - Relational Database](#rds---relational-database) 
+### 4️⃣ 🎲 [RDS - Relational Database](#rds-relational-database) 
 
 ## Passos para Criar e Configurar o RDS
 
@@ -164,7 +164,7 @@ Para mais detalhes, consulte a [documentação oficial do AWS RDS](https://docs.
 
 ---
 
-### 5️⃣ 🗝️[Instância EC2 e User Data](#instância-ec2-e-user-data)
+### 5️⃣ 🗝️ [Instância EC2 e User Data](#instância-ec2-e-user-data)
 
 ## Passos para Configurar a EC2
 
@@ -226,7 +226,7 @@ Para mais informações, consulte a [documentação oficial da Amazon EC2](https
 
 ---
 
-### 6️⃣ 🔓[Acesso ao EC2 e Bastion Host](#acesso-ao-ec2-e-bastion-host)
+### 6️⃣ 🔓 [Acesso ao EC2 e Bastion Host](#acesso-ao-ec2-e-bastion-host)
 
 ## Configuração de um Bastion Host
 
@@ -265,7 +265,7 @@ Para mais detalhes, consulte a [documentação oficial da AWS](https://docs.aws.
 
 ---
 
-### 7️⃣ ⚖️[Load Balancer](#load-balancer)  
+### 7️⃣ ⚖️ [Load Balancer](#load-balancer)  
 ## Configuração do Load Balancer (ELB)
 
 Siga as etapas abaixo para criar e configurar um Load Balancer na AWS:
@@ -309,7 +309,7 @@ Para mais informações, consulte a [documentação oficial do AWS Elastic Load 
 
 ---
 
-### 8️⃣ 🖨️[ASG - Auto Scaling Group](#asg---auto-scaling-group)   
+### 8️⃣ 🖨️ [ASG - Auto Scaling Group](#asg-auto-scaling-group)   
 ## Configuração do Auto Scaling Group (ASG)
 
 Siga os passos abaixo para criar e configurar um Auto Scaling Group na AWS:
